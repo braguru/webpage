@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="preparebill.css">
+    <body>
+        <div class="banner">
+           <div class="content">
+               <span id="result"></span>
+               <span id="result1"></span>
+               <span id="result2"></span>
+               <span id="result3"></span>
+               <span id="result4"></span>
+               <span id="result5"></span>
+               <span id="result6"></span>
+               <span id="result7"></span>
+               <span id="result8"></span>
+               <span id="result9"></span>
+           </div>
+            
+        </div>
+    </body>
+    <script>
+        document.getElementById("result").innerHTML=localStorage.getItem("first_text");
+        document.getElementById("result1").innerHTML=localStorage.getItem("last_text");
+        document.getElementById("result2").innerHTML=localStorage.getItem("prog");
+        document.getElementById("result3").innerHTML=localStorage.getItem("stugrade");
+        document.getElementById("result4").innerHTML=localStorage.getItem("former_school");
+        document.getElementById("result5").innerHTML=localStorage.getItem("sex");
+        document.getElementById("result6").innerHTML=localStorage.getItem("Date");
+        document.getElementById("result7").innerHTML=localStorage.getItem("hall");
+        document.getElementById("result8").innerHTML=localStorage.getItem("service");
+        document.getElementById("result9").innerHTML=localStorage.getItem("mail");
+        
+        
+    </script>
+</html>

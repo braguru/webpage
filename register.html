@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="register.css">
+    <!---we had linked our css file----->
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+<!--
+            <div>
+                <a href='website.html'>Seek Coding</a>
+            </div>
+-->
+<!--
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>About Us</a></li>
+                    <li><a href='#'>Services</a></li>
+                    <li><a href='#'>Contact</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-           form').style.display='block'" style="width:auto;">Login</button></li>
+                </ul>
+            </nav>
+-->
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+		            <input type='password'class='input-field'placeholder='Enter Password' required>
+		            <input type='checkbox'class='check-box'><span>Remember Password</span>
+		            <button type='submit'class='submit-btn'>Log in</button>
+		 </form>
+		 <form id='register' class='input-group-register' action="preparebill.html">
+		     <input type='text'id="fname" class='input-field'placeholder='First Name' required>
+		     <input type='text'id="lname" class='input-field'placeholder='Last Name ' required>
+		     <select name="programme" id="programme" class="input-field">
+                    <option value="" id="input-field">Select Programme</option>
+                    <option value="5000">Health Information</option>
+                    <option value="3500">Mathematics</option>         
+                    <option value="7000">Medicine</option>         
+                    <option value="2000">Political Science</option>        
+                    <option value="2500">International Business</option>     
+            </select>
+		     <input type='text'id ="grade" class='input-field'placeholder='Enter Aggregate' required>
+		     <input type='text' id="school" class='input-field'placeholder='Former School' required>
+		     <select name="Gender" id="Gender" class="input-field" required>
+                    <option value="">Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>    
+            </select>
+		     <input type='text'id="DOB" class='input-field'placeholder='Date Of Birth' required>
+		     <select name="Hall" id="Hall" class="input-field" required>
+                    <option value="">Hall Of Residence</option>
+                    <option value="400">SRC</option>
+                    <option value="300">VALCO</option>    
+                    <option value="300">ADEHYE</option>    
+                    <option value="350">SSNIT</option>    
+                    <option value="300">CASFORD</option>    
+            </select>
+		     <select name="Cafeteria" id="cafeteria" class="input-field" required>
+                    <option value="">Cafeteria Services</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>    
+            </select>
+		     <input type='email'id="email" class='input-field'placeholder='Email Id' required>
+		     <input type='password'class='input-field'placeholder='Enter Password' required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit'class='submit-btn'onclick= "passvalue();">Register</button>
+	         </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+<!--
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+//            if (event.target == modal) 
+//            {
+//                modal.style.display = "none";
+//            }
+        }
+    </script>
+    
+-->
+    <script src="preparebill.js">
+        
+    </script>
+</body>
+</html>
